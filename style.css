@@ -1,0 +1,8 @@
+*, *:before, *:after { box-sizing: border-box; }
+body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; }
+.container, #main { width: 90%; margin: 0 auto; overflow: auto; zoom: 1; }
+
+.search { background-color: red; padding: 3em 6em; margin-bottom: 1em }
+.sidebar, .repos { float: left; }
+.sidebar { width: 28%; background-color: lightblue; margin-right: 1.6em; }
+.repos { width: 70%; background-color: salmon; }
