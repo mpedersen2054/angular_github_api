@@ -11,11 +11,63 @@ body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; b
 /******************************/
 
 .search {
-    background-color: red; 
-    padding: 3em 6em; 
-    margin-bottom: 1em; 
-    background-color: #D2D2D2; 
-    border-radius: 0.4em; 
+    background-color: red;
+    height: 8em;
+    margin-bottom: 1em;
+    background-color: #D2D2D2;
+    border-radius: 0.4em;
+}
+
+.instructions {
+    width: 50%;
+    height: 8em;
+    margin-right: 2%;
+    float: left;
+    padding: 2em;
+}
+
+.instructions h2 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0.5em;
+}
+
+.username-search {
+    width: 48%;
+    float: left;
+}
+
+.search form {
+    height: 8em;
+    padding-left: 4em;
+}
+
+#search-input {
+    width: 20em;
+    height: 3em;
+    border-radius: 0.4em 0.4em 0.4em 0;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.1em;
+    padding-left: 0.6em;
+}
+
+#search-button {
+    width: 15em;
+    height: 2em;
+    border-radius: 0em 0.4em 0.4em 0.4em;
+    border: 1px solid blue;
+    background-color: lightblue;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+
+#search-button:hover {
+    background-color: blue;
+    color: #fff;
 }
 
 /*******************************
@@ -23,15 +75,15 @@ body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; b
 /******************************/
 
 .sidebar, .repos {
-    float: left; 
-    background-color: #fff; 
-    border-radius: 0.4em; 
-    padding: 1.5em 3em; 
+    float: left;
+    background-color: #fff;
+    border-radius: 0.4em;
+    padding: 1.5em 3em;
 }
 .sidebar {
-    width: 28%; 
-    margin-right: 2%; 
+    width: 28%;
+    margin-right: 2%;
 }
 .repos {
-    width: 70%; 
+    width: 70%;
 }

@@ -10,25 +10,44 @@
 
 <div ng-controller="MainCtrl" id="main">
 
-    <div class="search">
-        <form name="searchName" ng-submit="search(username)">
-            <input type="search" ng-model="username" />
-            <input type="submit" value="Search" />
-        </form>
+    <!-- Error -->
+    <div class="error" ng-show="error">
+        <span>There was an error.</span>
     </div>
 
+    <!-- Search -->
+    <div class="search">
+        <div class="instructions">
+            <h2>Enter a Github username into</h2>
+            <h2>the form to see their stats!</h2>
+        </div>
+        <div class="username-search">
+            <form name="searchName" ng-submit="search(username)">
+                <input type="text" id="search-input" />
+                <br>
+                <input type="submit" value="Search" id="search-button" />
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
     <div class="sidebar">
         <div ng-show="!user">
-            no user found
+            <div class="no-user">
+                no user found
+            </div>
         </div>
         <div ng-show="user">
             there is a user
         </div>
     </div>
 
+    <!-- Repos -->
     <div class="repos">
         <div ng-show="!user">
-            no user found
+            <div class="no-user">
+                no user found
+            </div>
         </div>
         <div ng-show="user">
             there is a user
