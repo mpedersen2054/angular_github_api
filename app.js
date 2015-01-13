@@ -3,9 +3,17 @@ var app = angular.module('githubViewer', []);
 
 var MainCtrl = function($scope, $http) {
 
-    var onUser = function(response) {
+    var onUserSuccess = function(response) {
         $scope.user = response.data;
+
+        $http.get($scope.user.repos_url)
+            .then(onRepoSuccess, onError)
     };
+
+    var onRepoSuccess = function(response) {
+        $scope.repos = response.data;
+        $scope.username = '';
+    }
 
     var onError = function(reason) {
         $scope.error = "There was an error";
@@ -13,7 +21,7 @@ var MainCtrl = function($scope, $http) {
 
     $scope.search = function(username) {
         $http.get('https://api.github.com/users/' + username)
-            .then(onUser, onError)
+            .then(onUserSuccess, onError)
     };
 
     $scope.username = "mpedersen2054";

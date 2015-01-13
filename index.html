@@ -58,7 +58,26 @@
             </div>
         </div>
         <div ng-show="user">
-            there is a user
+            <div class="title">
+                <h3>Repositories</h3>
+                <hr>
+            </div>
+            <ul class="repo-list">
+                <li class="repo" ng-repeat="repo in repos">
+                    <h3>
+                        <a href="{{repo.url}}">{{repo.name}}</a>
+                    </h3>
+                    <span>
+                        {{repo.language}}
+                    </span> |
+                    <span>
+                        {{repo.size}} Lines
+                    </span> |
+                    <span>
+                        {{repo.stargazers_count}} Stars
+                    </span>
+                </li>
+            </ul>
         </div>
     </div>
 
