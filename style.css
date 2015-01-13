@@ -6,6 +6,23 @@
 body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; background-color: #F2F2F2; }
 .container, #main { width: 90%; margin: 0 auto; overflow: auto; zoom: 1; }
 
+.error {
+    position: relative;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 0.6em;
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+    letter-spacing: 4px;
+    border-radius: 0.4em;
+    opacity: 0.8;
+}
+.close-error {
+    float: right;
+    cursor: pointer;
+}
+
 /*******************************
 **  search
 /******************************/
@@ -27,10 +44,10 @@ body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; b
 }
 
 .instructions h2 {
-    font-size: 1.6em;
+    font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin-bottom: 0.5em;
+    padding-top: 0.2em;
 }
 
 .username-search {
