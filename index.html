@@ -38,7 +38,15 @@
             </div>
         </div>
         <div ng-show="user">
-            there is a user
+            <div class="thumbnail">
+                <img ng-src="{{user.avatar_url}}" width="230px" height="230px">
+            </div>
+            <div class="name">
+                <h3>{{user.name}}</h3>
+            </div>
+            <div class="location">
+                <span>{{user.location}}</span>
+            </div>
         </div>
     </div>
 

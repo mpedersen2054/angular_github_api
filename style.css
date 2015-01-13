@@ -44,10 +44,10 @@ body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; b
 }
 
 .instructions h2 {
-    font-size: 2em;
-    text-transform: uppercase;
+    font-size: 2.2em;
     letter-spacing: 4px;
     padding-top: 0.2em;
+    margin-left: 1em;
 }
 
 .username-search {
@@ -95,12 +95,43 @@ body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; b
     float: left;
     background-color: #fff;
     border-radius: 0.4em;
-    padding: 1.5em 3em;
+    padding: 2em 3em;
 }
+
+/*******************************
+**  sidebar
+/******************************/
+
 .sidebar {
     width: 28%;
     margin-right: 2%;
 }
+
+.sidebar .thumbnail {
+    border-bottom: 2px solid #d2d2d2;
+}
+
+.sidebar .thumbnail img {
+    min-width: 100%;
+    border-radius: 0.4em;
+    margin-bottom: 1em;
+}
+
+.sidebar .name {
+    font-size: 1.8em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.sidebar .location {
+    font-size: 1.4em;
+    color: #b2b2b2;
+}
+
+/*******************************
+**  repos
+/******************************/
+
 .repos {
     width: 70%;
 }

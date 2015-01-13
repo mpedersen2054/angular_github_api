@@ -16,6 +16,7 @@ var MainCtrl = function($scope, $http) {
             .then(onUser, onError)
     };
 
+    $scope.username = "mpedersen2054";
     $scope.message = "hello from angular!";
 };
 
