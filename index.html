@@ -11,15 +11,28 @@
 <div ng-controller="MainCtrl" id="main">
 
     <div class="search">
-        search
+        <form name="searchName" ng-submit="search(username)">
+            <input type="search" ng-model="username" />
+            <input type="submit" value="Search" />
+        </form>
     </div>
 
     <div class="sidebar">
-        hello
+        <div ng-show="!user">
+            no user found
+        </div>
+        <div ng-show="user">
+            there is a user
+        </div>
     </div>
 
     <div class="repos">
-        repos
+        <div ng-show="!user">
+            no user found
+        </div>
+        <div ng-show="user">
+            there is a user
+        </div>
     </div>
 
 </div> <!-- end MainCtrl -->

@@ -1,8 +1,37 @@
+/*******************************
+**  general
+/******************************/
+
 *, *:before, *:after { box-sizing: border-box; }
-body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; }
+body { font-family: Arial; font-size: 16px; font-weight: 300; padding: 20px 0; background-color: #F2F2F2; }
 .container, #main { width: 90%; margin: 0 auto; overflow: auto; zoom: 1; }
 
-.search { background-color: red; padding: 3em 6em; margin-bottom: 1em }
-.sidebar, .repos { float: left; }
-.sidebar { width: 28%; background-color: lightblue; margin-right: 1.6em; }
-.repos { width: 70%; background-color: salmon; }
+/*******************************
+**  search
+/******************************/
+
+.search {
+    background-color: red; 
+    padding: 3em 6em; 
+    margin-bottom: 1em; 
+    background-color: #D2D2D2; 
+    border-radius: 0.4em; 
+}
+
+/*******************************
+**  main content
+/******************************/
+
+.sidebar, .repos {
+    float: left; 
+    background-color: #fff; 
+    border-radius: 0.4em; 
+    padding: 1.5em 3em; 
+}
+.sidebar {
+    width: 28%; 
+    margin-right: 2%; 
+}
+.repos {
+    width: 70%; 
+}
